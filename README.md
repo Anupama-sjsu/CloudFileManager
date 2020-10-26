@@ -34,7 +34,7 @@ server {
        proxy_cache_bypass $http_upgrade;
    }
  }
-
+ 
 ### This reroutes the website traffic onto the default port 80
 
 ## Available Scripts
