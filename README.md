@@ -2,7 +2,7 @@
 
 ## On your terminal, download and install the git repository with the following commands:
 
-### `git init`
+#### `git init`
 ### `git clone https://github.com/Anupama-sjsu/CloudFileManager.git`
 ### `Enter git username and password`
 
