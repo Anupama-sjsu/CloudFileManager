@@ -20,20 +20,20 @@
 ### sudo apt-get install nginx
 ### sudo nano /etc/nginx/nginx.conf
 ## Edit the nginx.conf file and add the following code:
-### server {
-   ### listen         80 default_server;
-   ### listen         [::]:80 default_server;
-   ### server_name    localhost;
-   ### root           /usr/share/nginx/html;
-   ### location {
+server {
+   listen         80 default_server;
+   listen         [::]:80 default_server;
+   server_name    localhost;
+   root           /usr/share/nginx/html;
+   location {
        proxy_pass http://127.0.0.1:3000;
        proxy_http_version 1.1;
        proxy_set_header Upgrade $http_upgrade;
        proxy_set_header Connection 'upgrade';
        proxy_set_header Host $host;
        proxy_cache_bypass $http_upgrade;
-  ###  }
-### }
+   }
+ }
 
 ### This reroutes the website traffic onto the default port 80
 
