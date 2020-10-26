@@ -4,7 +4,7 @@
 
 ### `git init`
 ### `git clone https://github.com/Anupama-sjsu/CloudFileManager.git`
-### Enter git username and password
+### `Enter git username and password`
 
 ## Go to the directory of the downloaded git folder and run the floowing commands to install all dependencies and packages, to run a build and then serve the build to a port:
 ### `npm run install or yarn install`
