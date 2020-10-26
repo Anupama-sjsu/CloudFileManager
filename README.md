@@ -1,19 +1,41 @@
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## In your localhost terminal, download and install the git repository with the following commands:
+## On your terminal, download and install the git repository with the following commands:
 
 ### git init
 ### git clone https://github.com/Anupama-sjsu/CloudFileManager.git
 ### Enter git username and password
 
-### npm run install or yarn build
+## Go to the directory of the downloaded git folder and run the floowing commands to install all dependencies and packages, to run a build and then serve the build to a port:
+### npm run install or yarn install
 ### npm run build or sudo GENERATE_SOURCEMAP=false yarn build
 
 ### serve -s build
 
-### - To keep the server running: 
+## To keep the server running: 
+### npm install pm2 -g
 ### pm2 serve build 
 
+## To run the project on port 80 and to have no unsecure ports install and run nginx:
+### sudo apt-get install nginx
+### sudo nano /etc/nginx/nginx.conf
+## Edit the nginx.conf file and add the following code:
+### server {
+   listen         80 default_server;
+   listen         [::]:80 default_server;
+   server_name    localhost;
+   root           /usr/share/nginx/html;
+   location / {
+       proxy_pass http://127.0.0.1:3000;
+       proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection 'upgrade';
+       proxy_set_header Host $host;
+       proxy_cache_bypass $http_upgrade;
+   }
+}
+
+### This reroutes the website traffic onto the default port 80
 
 ## Available Scripts
 
