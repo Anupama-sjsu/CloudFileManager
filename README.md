@@ -11,7 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### serve -s build
 
-### pm2 serve build
+### - To keep the server running: 
+### pm2 serve build 
 
 
 ## Available Scripts
