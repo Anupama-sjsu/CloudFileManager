@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# In your localhost terminal, download and install the git repository with the following commands:
+## In your localhost terminal, download and install the git repository with the following commands:
 
 ### git init
 ### git clone https://github.com/Anupama-sjsu/CloudFileManager.git
