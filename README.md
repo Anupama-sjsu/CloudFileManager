@@ -2,16 +2,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # In your localhost terminal, download and install the git repository with the following commands:
 
-# git init
-# git clone https://github.com/Anupama-sjsu/CloudFileManager.git
-# Enter git username and password
+### git init
+### git clone https://github.com/Anupama-sjsu/CloudFileManager.git
+### Enter git username and password
 
-# npm run install or yarn build
-# npm run build or sudo GENERATE_SOURCEMAP=false yarn build
+### npm run install or yarn build
+### npm run build or sudo GENERATE_SOURCEMAP=false yarn build
 
-# serve -s build
+### serve -s build
 
-# pm2 serve build
+### pm2 serve build
 
 
 ## Available Scripts
